@@ -1,6 +1,14 @@
 ---
 layout: main
 ---
+<div class="post-date">{{ page.date | date_to_string }}</div>
 <div class="post">
   {{ content }}
+</div>
+<div>
+  <ul class="categories">
+    {% for cat in page.categories %}
+    <li>{{ cat }}</li>
+    {% endfor %}
+  </ul>
 </div>

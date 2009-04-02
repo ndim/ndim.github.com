@@ -2,19 +2,27 @@
 layout: main
 title: ndim @ GitHub
 ---
-      <div class="description">
-	<a href="erlusb/">ndim/erlusb</a>
-      </div>
-      <div class="description">
-	<a href="http://github.com/ndim/yaws/">ndim/yaws</a>
-      </div>
-      <div class="blog-index">
-        <ul>
-        {% for post in site.posts %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-        </ul>
-      </div>
-      <div class="footer">
-	... <a href="http://github.com/ndim">ndim</a> ...
-      </div>
+<h2>My Projects:</h2>
+<dl>
+  <dt><a href="erlusb/">erlusb</a></dt>
+  <dd>Erlang module to interface to USB ports.</dd>
+  <dt><a href="eserial/">eserial</a></dt>
+  <dd>Erlang module(s) to interface to serial (RS232 etc) ports.</dd>
+  <dt><a href="primenumbers/">primenumbers</a></dt>
+  <dd>Determine and print the first 2^16 prime numbers in a dozen languages. Includes <a href="http://ndim.github.com/primenumbers/">benchmarks</a>!</dd>
+</dl>
+<h2>Contributing to these Projects:</h2>
+<dl>
+  <dt><a href="http://github.com/ndim/yaws/">yaws</a></dt>
+  <dd></dd>
+</dl>
+<h2>Still testing this:</h2>
+<ul class="blog-index">
+  {% for post in site.posts %}
+  <li><a href="{{ post.url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
+    (<ul class="categories">{% for cat in post.categories %}<li>{{ cat }}</li>{% endfor %}</ul>)</li>
+  {% endfor %}
+</ul>
+<div class="footer">
+  ... <a href="http://github.com/ndim">ndim</a> ...
+</div>

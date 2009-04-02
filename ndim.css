@@ -46,3 +46,46 @@ hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     padding-top:30px;
     font-style: italic;
 }
+
+div.post-date {
+    border: solid 1pt green;
+    background-color: #bdb;
+    color: #000;
+    float: right;
+}
+
+dl {
+    margin: 0 1em;
+}
+
+ul.blog-index {
+    list-style-type: none;
+    margin: 0 1em;
+    padding: 0;
+}
+
+ul.blog-index > li {
+    margin: 0;
+    padding: 0;
+}
+
+ul.categories {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul.categories > li {
+    display: inline;
+    border: solid 1pt red;
+    background-color: #fbb;
+    color: #000;
+    margin: 0;
+    margin-left: 0.5ex;
+    padding: 0;
+}
+ul.categories > li:first-child {
+    margin-left: 0;
+}
+
+/* end of file. */
